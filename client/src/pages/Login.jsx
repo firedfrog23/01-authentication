@@ -35,6 +35,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent form reload
+    axios.defaults.withCredentials = true
   
     try {
       const endpoint = formState.mode === 'Sign Up'
@@ -50,6 +51,7 @@ const Login = () => {
         payload.name = formState.name;
       }
   
+      
       const { data } = await axios.post(`${backendUrl}${endpoint}`, payload);
   
       if (data.success) {
