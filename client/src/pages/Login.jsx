@@ -75,7 +75,7 @@ const Login = () => {
         onClick={()=>navigate('/')}
         src={assets.logo}
         alt="Logo"
-        className="absolute left-5 sm:left-20 top-5 w-28 sm:w-28 cursor-pointer"
+        className="absolute left-4 sm:left-20 top-5 w-28 sm:w-28 cursor-pointer"
       />
       <div className="bg-slate-900 p-10 rounded-lg shadow-lg w-full sm:w-96 text-indigo-300 text-sm">
         <h2 className="text-3xl font-semibold text-white text-center mb-3">
@@ -126,7 +126,7 @@ const Login = () => {
             />
           </div>
 
-          <p  onClick={() => navigate('/password-reset')}  className="mb-4 text-indigo-500 cursor-pointer">Forgot password?</p>
+          <p  onClick={() => navigate('/password-reset')}  className="mb-6 text-indigo-500 cursor-pointer">Forgot password?</p>
           <button
             type="submit"
             className="w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-900 text-white font-medium"
