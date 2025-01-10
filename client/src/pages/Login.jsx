@@ -63,8 +63,7 @@ const Login = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error('An error occurred. Please try again.');
-      console.error('Error during submission:', error);
+      toast.error(error.message);
     }
   };
   
